@@ -1,14 +1,16 @@
 {
-	"compilerOptions": {
-		"composite": true,
-		"module": "esnext",
-		"moduleResolution": "node"
-	},
-	"include": [
-		"vite.config.ts",
-		"vite-config/**/*.ts",
-		"mock/**/*.ts",
-		"types/**/*.d.ts",
-		"types/**/*.ts",
-	]
+    "compilerOptions": {
+        "composite": true,
+        "module": "esnext",
+        "moduleResolution": "node"
+    },
+    "include": [
+        "vite.config.ts",
+        "vite-config/**/*.ts",
+        "mock/**/*.ts",
+        "types/**/*.d.ts",
+        "types/**/*.ts",
+        "utils/**/*.ts",
+        "utils/helper.ts",
+    ]
 }

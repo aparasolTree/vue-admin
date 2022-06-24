@@ -1,9 +1,6 @@
 <script setup lang='ts'>
-import { userInfo, userLogin } from '@/api/userApi';
-// const { data } = await userInfo()
+import {  userLogin } from '@/api/userApi';
 const { result } = await userLogin()
-console.log(result);
-
 </script>
 
 <template>
