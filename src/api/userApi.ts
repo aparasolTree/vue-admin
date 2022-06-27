@@ -12,7 +12,7 @@ export function userInfo() {
 export interface UserLoginInterface {
     token: string
 }
-export function userLogin() {
+export function userLogin<T extends {}>(values?: T) {
     return http.request<UserLoginInterface>({
         url: '/login'
     })

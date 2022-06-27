@@ -10,7 +10,5 @@
         "mock/**/*.ts",
         "types/**/*.d.ts",
         "types/**/*.ts",
-        "utils/**/*.ts",
-        "utils/helper.ts",
     ]
 }

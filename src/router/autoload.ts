@@ -32,6 +32,7 @@ function getRouteByModule(file: string, module: { [key: string]: any }) {
         path: `/${name}`,
         component: module.default
     }
+
     return Object.assign(route, module.default?.route)
 }
 

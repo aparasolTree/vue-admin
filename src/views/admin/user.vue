@@ -1,12 +1,17 @@
-<script setup lang='ts'>
-</script>
+<script setup lang="ts"></script>
 
 <template>
     <div>admin/user.vue</div>
 </template>
 
-<!-- <script>
+<style scoped></style>
+
+<script>
 export default {
-    route: { path: '/user' }
-}
-</script> -->
+    route: {
+        meta: {
+            auth: true,
+        },
+    },
+};
+</script>

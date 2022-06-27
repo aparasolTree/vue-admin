@@ -1,0 +1,7 @@
+.base-input {
+    @apply px-4 text-xl block h-10 border-b-2 outline-none w-[300px] placeholder:text-sm focus:ring-1 ring-offset-1 ring-slate-800 duration-300 rounded-sm mt-3;
+}
+
+.base-error {
+    @apply bg-pink-700 text-white rounded-sm text-xs px-3 py-1 mt-2;
+}
