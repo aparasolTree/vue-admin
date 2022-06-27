@@ -14,7 +14,7 @@ const onSubmit = async (values: LoginInfo) => {
     const {
         result: { token },
     } = await userLogin(values);
-    store.set('token', { token }, { expire: 10 });
+    store.set('token', { token });
     router.push({ name: 'home' });
 };
 </script>

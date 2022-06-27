@@ -10,7 +10,7 @@ import BaseButton from '@/components/Base/BaseButton.vue';
             alt="aParasolTree"
         />
         <div class="flex w-[230px] justify-between">
-            <RouterLink :to="{ name: 'admin.user' }">
+            <RouterLink :to="{ name: 'admin.home' }">
                 <BaseButton class="text-sm">后台管理</BaseButton>
             </RouterLink>
             <RouterLink :to="{ name: 'auth.login' }">
