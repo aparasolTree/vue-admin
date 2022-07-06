@@ -6,7 +6,6 @@ const menus = ref<Menu[]>([
     {
         title: '错误页面',
         icon: 'fas fa-bomb',
-        isOpen: true,
         children: [
             { title: '404 页面', active: true },
             { title: '403 页面' },
@@ -32,17 +31,15 @@ const resetMenus = (menu: Menu[], prop: MenuKeys) => {
 };
 
 const handleChangeActive = (item: Menu) => {
-    // resetMenus(menus.value, 'active');
-    // item.active = true;
-};
-const handleOpen = (item: Menu) => {
-    resetMenus(menus.value, 'isOpen');
-    item.isOpen = true;
+    console.log(0);
+
+    resetMenus(menus.value, 'active');
+    item.active = true;
 };
 </script>
 
 <template>
     <ul class="text-white">
-        <Tree :tree="menus" @change-active="handleChangeActive" @toggle-open="handleOpen"></Tree>
+        <Tree :trees="menus" @change-active="handleChangeActive"></Tree>
     </ul>
 </template>
